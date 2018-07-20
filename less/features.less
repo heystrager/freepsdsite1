@@ -1,0 +1,95 @@
+.features {
+  height: 700px;
+  background-color:#11749e;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features-slogan {
+  padding-top: 150px;
+  font-size: 38px;
+  font-family: "Gotham";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  &:before {
+    content: "W";
+    font-size: 250px;
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.18);
+    font-weight: bold;
+    line-height: 0.852;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+  }
+}
+
+.features-list {
+  margin-top: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feautres-list__item {
+  position: relative;
+  &:nth-child(-n+2) {
+    &:after {
+      content: url(../img/feature1-2.png);
+      position: absolute;
+      top: -85%;
+      left: 43%;
+    }
+  }
+  &:nth-child(3) {
+    &:after {
+      content: url(../img/feature3.png);
+      position: absolute;
+      top: -85%;
+      left: 41%;
+    }
+  }
+  &:nth-child(4) {
+    &:after {
+      content: url(../img/feature4.png);
+      position: absolute;
+      top: -85%;
+      left: 41%;
+    }
+  }
+}
+
+.list__item-name  {
+  font-size: 18px;
+  font-family: "Gotham";
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: center;
+  position: relative;
+  &:before {
+    content: "";
+    border-radius: 50%;
+    background-color: rgb(46, 133, 170);
+    width: 133px;
+    height: 133px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 0;
+  }
+}
+
+.list__item-description {
+  font-size: 15px;
+  font-family: "Gotham";
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  text-align: center;
+}
+
